@@ -42,7 +42,5 @@ request.log(data)
 Downloading Images from the Unsplash Image Generator API:
 ```
 const request = require("api-request-js")
-
-let data = request.getRequest("https://newton.now.sh/api/v2/factor/x^2-1")
-request.log(data)
+let data = request.getRequest("https://source.unsplash.com/random/", "/Users/Billy/Desktop/Images/")
 ```
