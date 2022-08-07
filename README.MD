@@ -1,20 +1,48 @@
 # Welcome to the api-request-js package! 
 
-### What's the point? 
-API. The problem that both beginner and intermediate programmers face while using APIs is getting data. How do we get this data? <br>
+## 🌐 Website 
+https://requestjs.netlify.app/
 
-With a quick google search, we are directed to resources that show us multiple ways of getting data from an endpoint. Using fetch or axios are popular options and the tutorials show us code. But there's a problem. <br>
+### 😧 There's a problem...
 
-It's too complex. <br>
+Getting data from an API is complex and hard in JavaScript. A quick google search will direct you to a difficult code block that either use fetch or axios.<br>
+This SCARES off beginners.<br>
 
-While Python has a simple requests library that just requires a simple line like: <br>
-```requests.get('https://w3schools.com')``` <br>
-JavaScript is much much MUCH more complex. Why? <br>
-The equivalent of a get request in JavaScript requires the understanding of async and await, as well as the learnign and understanding of these concepts. <br>
+- Which one do I use?
+- Like what is the await keyword?
+- When do I use it?
+- But wait what is async?
+- How does async even work?
+- How do I error handle? .catch?
+- I can't even download an image from this url!! Ahhrr!!!
+- What's a Promise? Whaaa?!!??
+- This totals over 30 lines of code (depending on your use case). Meanwhile in Python it's literally one line - requests.get(url).
 
-Also, how do we download images from an api url? 
+With api-request-js we dumb down api calls. Now you can get data with just one line.
 
-### Introducing api-request-js
-Literally one line to replace them all. 
+## 🚀 Install & Use!
 
-### APIs to test out with api-request-js
+```
+npm i api-request-js
+const request = require("api-request-js")
+let data = request.getRequest(url, path)
+request.log(data)
+```
+
+### 😧 Examples...
+
+Solving math problems using the Newton Math Solver API:
+```
+const request = require("api-request-js")
+
+let data = request.getRequest("https://newton.now.sh/api/v2/factor/x^2-1")
+request.log(data)
+```
+
+Downloading Images from the Unsplash Image Generator API:
+```
+const request = require("api-request-js")
+
+let data = request.getRequest("https://newton.now.sh/api/v2/factor/x^2-1")
+request.log(data)
+```

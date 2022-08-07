@@ -6,7 +6,7 @@ async function getRequest(url, path_dir="") {
     extensions = ["jpg", "jpeg", "png", "gif", "webp", "mp4", "mp3"]
     checkDownload1 = extensions.includes(url.substring(url.lastIndexOf('.') + 1))
     checkDownload2 = extensions.includes(url.substr(url.length - 3))
-    checkDownload3 = url.includes("https://images.unsplash.com")
+    checkDownload3 = url.includes("https://source.unsplash.com")
     if (checkDownload1 || checkDownload2 || checkDownload3) {
         await downloadReq(url, path_dir)
     } else {
