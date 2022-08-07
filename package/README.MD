@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/api-request-js.svg)](https://badge.fury.io/js/api-request-js)
+
 # Welcome to the api-request-js package! 
 
 ## 🌐 Website 

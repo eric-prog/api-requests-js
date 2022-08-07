@@ -1,6 +1,6 @@
 {
   "name": "api-request-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Access APIs with just one line. JavaScript requests simplified!",
   "main": "index.js",
   "scripts": {
