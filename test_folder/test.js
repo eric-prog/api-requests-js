@@ -1,3 +1,4 @@
-const apiPackage = require("api-request-js")
+const request = require("api-request-js")
 
-apiPackage.getRequest("http://thecatapi.com/api/images/get?format=src&type=gif", "/Users/ericsheen/Desktop/NeoHacks_2.0/downloads")
+let data = request.getRequest("https://newton.now.sh/api/v2/factor/x^2-1")
+request.log(data)
